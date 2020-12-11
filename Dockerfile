@@ -7,6 +7,6 @@ ADD https://www.free-css.com/assets/files/free-css-templates/download/page15/red
 WORKDIR /var/www/html
 RUN red-haze.zip
 RUN cp -rvf red-haze/* .
-RUN rm -rf images index.html licence.txt style.css
+RUN rm -rf red-haze.zip red-haze
 CMD [" /usr/sbin/httpd","-D", "FOREGROUND"]
 EXPOSE 80
